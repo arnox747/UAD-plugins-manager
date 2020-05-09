@@ -1,0 +1,13 @@
+# Ignore Mac system files
+.DS_store
+
+# All UAD plugins
+*.component
+*.vst
+
+# All backup files
+*.backup
+*.list
+*.sh
+*.txt
+*.json
