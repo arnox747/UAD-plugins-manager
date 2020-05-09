@@ -132,9 +132,9 @@ end
 
 uad_plugins.sort! { |pA, pB| pA.name.downcase <=> pB.name.downcase }
 
-uad_plugins.each { |p|
-    print "#{ (p.own > 0) ? ">" : "" }#{p.name}\n"
-}
+# uad_plugins.each { |p|
+#     print "#{ (p.own > 0) ? ">" : "" }#{p.name}\n"
+# }
 
 prompt = TTY::Prompt.new(interrupt: :exit)
 
