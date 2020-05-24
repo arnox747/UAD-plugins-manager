@@ -1,9 +1,11 @@
-# UAD-Plugins-Manager
+# UAD-Plugins-Manager (BETA)
 #### Manage Universal Audio plugins on a Mac / OSX
 
 
 ### The pain point
 If like me, you're beyond tired of Universal Audio installing all of their plugins on every update, and than having a hard time finding the ones you actually own when using a DAW, this might be the solution to your pain. I've been meaning to write this utility for ages. It took a pandemic to finally make it happen.
+
+Please keep in mind that a version which handles upgrades of UAD Plugins is in the works. It should be available on May 17th.
 
 **UAD Plugins Manager** requires basic knowledge of the Mac command line, because it runs in the Terminal, but it's intuitive and easy to use.
 
