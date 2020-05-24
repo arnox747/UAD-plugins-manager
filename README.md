@@ -5,9 +5,10 @@
 ### The pain point
 If like me, you're beyond tired of Universal Audio installing all of their plugins on every update, and than having a hard time finding the ones you actually own when using a DAW, this might be the solution to your pain. I've been meaning to write this utility for ages. It took a pandemic to finally make it happen.
 
-Please keep in mind that a version which handles upgrades of UAD Plugins is in the works. It should be available on May 17th.
+### May, 24th, 2020 Big announcement - WE'RE NOW FEATURE COMPLETE!!!
+The UAD Plugin Manager is now feature complete, and will correctly and safly handle UAD plugin upgrades. When a new version of a plugin is detected, the plugin manager will create a backup folder, place the old versions of the managed plugins in the corresponding back folder, and place the new versions of the plugins in the managed folder. Nothing is ever deleted, but you're welcome to delete the backup folder if you're happy with the upgrade.
 
-**UAD Plugins Manager** requires basic knowledge of the Mac command line, because it runs in the Terminal, but it's intuitive and easy to use.
+**UAD Plugins Manager** requires basic knowledge of the Mac command line, because it runs in the Terminal. That being said, I believe that you'll find it intuitive and easy to use. The source code was written to be easy to read.
 
 ### How does it work?
 **UAD Plugins Manager** simply moves UAD plugins in and out of the system folder; keeping the plugins you own in the system folder ('/Library/Audio/Plug-Ins/[Components/ and vst/]'), and moving the ones you don't own into a 'managed_plugins/[Components/ and vst/]' sub folder. The plugins are moved, never copied or deleted, so nothing will be lost or compromised.
