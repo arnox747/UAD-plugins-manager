@@ -178,7 +178,7 @@ def manage_plugins_commit_changes(input_file,path_library_components,path_librar
     print "\n\n----- DONE -----\n\n"
 end
 
-def generate_uad_plugin_lists(path_library_components, uad_plugins_installed, uad_plugins_managed)
+def generate_uad_plugin_lists(path_library_components, path_managed_components, uad_plugins_installed, uad_plugins_managed)
 
     list_installed =  "ls #{path_library_components}UAD* | grep 'UAD*' | sed \"s/.*\\///\" | sed 's/\.[^.]*$//' > #{uad_plugins_installed}"
     list_managed   =  "ls #{path_managed_components}UAD* | grep 'UAD*' | sed \"s/.*\\///\" | sed 's/\.[^.]*$//' > #{uad_plugins_managed}"
@@ -188,6 +188,7 @@ def generate_uad_plugin_lists(path_library_components, uad_plugins_installed, ua
 end
 
 
+#==========================================================================================================================================
 #
 #   Main app
 #
@@ -230,9 +231,9 @@ if(File.file?(uad_plugins_installed) && File.file?(uad_plugins_managed))
         }
 
     end
-else
-    generate_uad_plugin_lists(path_library_components, uad_plugins_installed, uad_plugins_managed)
 end
+
+generate_uad_plugin_lists(path_library_components, path_managed_components, uad_plugins_installed, uad_plugins_managed)
 
 i_count_owned = 0
 
